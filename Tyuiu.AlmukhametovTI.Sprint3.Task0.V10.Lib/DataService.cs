@@ -11,13 +11,13 @@ namespace Tyuiu.AlmukhametovTI.Sprint3.Task0.V10.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double result = 0;
+            double P = 1;
             int i;
-            for (i = startValue; i < stopValue; i++)
+            for (i = startValue; i <= stopValue; i++)
             {
-                result = result + Math.Pow(300 / (i + (Math.Pow(value, i))), i);
+                P *= Math.Pow(300 / (i + (Math.Pow(value, i))), i);
             }
-            return Math.Round(result,3);
+            return Math.Round(P, 3);
         }               
     }
 }
