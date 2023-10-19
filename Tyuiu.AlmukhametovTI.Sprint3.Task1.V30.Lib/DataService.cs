@@ -11,7 +11,7 @@ namespace Tyuiu.AlmukhametovTI.Sprint3.Task1.V30.Lib
     {
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
-            double sum = 1;
+            double sum = 0;
             while (startValue <= stopValue)
             {
                 sum += ((Math.Pow(value, 1)) + (5 / (1 + 4))) * Math.Sin(value);
