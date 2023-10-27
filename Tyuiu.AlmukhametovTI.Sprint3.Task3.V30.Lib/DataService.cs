@@ -11,12 +11,12 @@ namespace Tyuiu.AlmukhametovTI.Sprint3.Task3.V30.Lib
     {
         public int GetMaxCharCount(string value, char item)
         {
-            string input = "fyyklbtyn ygrc vfyyyyh";
+            string str = "fyyklbtyn ygrc vfyyyyh";
 
             int maxCount = 0;
             int count = 0;
 
-            foreach (char chr in value)
+            foreach (char chr in str)
             {
                 if (chr == 'y')
                 {
